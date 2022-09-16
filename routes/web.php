@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PhpController;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -28,4 +30,20 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+Route::get('/react', function () {
+    return Inertia::render('react');
+})->name('react');
+
+Route::get('/php', function () {
+    return (new PhpController)->index();
+})->name('php');
+
+Route::post('/php', function () {
+    return (new PhpController)->distributeCard(request()->players);
+})->name('php');
+
+Route::get('/javascript', function () {
+    return File::get(public_path() . '/javascript.html');
+})->name('javascript');
+
+require __DIR__ . '/auth.php';
