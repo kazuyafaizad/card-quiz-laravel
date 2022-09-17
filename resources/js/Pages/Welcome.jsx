@@ -30,7 +30,7 @@ export default function Welcome(props) {
                                 </div>
                             </div>
 
-                            <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l hover:bg-gray-500">
+                            <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l hover:bg-gray-500 hidden">
                                 <div className="flex items-center">
                                     <div className="ml-4 text-lg leading-7 font-semibold">
                                         <a
@@ -47,7 +47,7 @@ export default function Welcome(props) {
                                 </div>
                             </div>
 
-                            <div className="p-6 border-t border-gray-200 dark:border-gray-700 hover:bg-gray-500">
+                            <div className="p-6 border-t border-gray-200 dark:border-gray-700 hover:bg-gray-500 hidden">
                                 <div className="flex items-center">
                                     <div className="ml-4 text-lg leading-7 font-semibold">
                                         <a

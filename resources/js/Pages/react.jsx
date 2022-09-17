@@ -7,7 +7,21 @@ export default function React(props) {
     const pips = ["S", "H", "D", "C"];
 
     // Card 2 to 9 are, as it is, 1=A,10=X,11=J,12=Q,13=K
-    const number = ["A", "2", "3", 4, 5, 6, 7, 8, 9, "X", "J", "Q", "K"];
+    const number = [
+        "A",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "X",
+        "J",
+        "Q",
+        "K",
+    ];
 
     const generateCardDeck = () => {
         cardDeck = pips

@@ -33,7 +33,7 @@ class PhpController extends Controller
         $pips = collect(["S", "H", "D", "C"]);
 
         // Card 2 to 9 are, as it is, 1=A,10=X,11=J,12=Q,13=K
-        $number = collect(["A", "2", "3", 4, 5, 6, 7, 8, 9, "X", "J", "Q", "K"]);
+        $number = collect(["A", "2", "3", "4", "5", "6", "7", "8", "9", "X", "J", "Q", "K"]);
 
         $cardDeck = $pips->map(function ($card) use ($number) {
             return $number->map(function ($n) use ($card) {
