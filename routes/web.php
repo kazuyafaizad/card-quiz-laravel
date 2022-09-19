@@ -40,7 +40,7 @@ Route::get('/php', function () {
 
 Route::post('/php', function () {
     return (new PhpController)->distributeCard(request()->players);
-})->name('php');
+})->name('post-php');
 
 Route::get('/javascript', function () {
     return File::get(public_path() . '/javascript.html');
